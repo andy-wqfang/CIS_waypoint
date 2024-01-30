@@ -1,0 +1,1 @@
+/home/wqfang/research/CIS/src/mpc_package/build/mpc_package/ament_cmake_core/mpc_packageConfig-version.cmake

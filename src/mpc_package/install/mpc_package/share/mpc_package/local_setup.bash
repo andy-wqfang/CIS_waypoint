@@ -1,0 +1,1 @@
+/home/wqfang/research/CIS/src/mpc_package/build/mpc_package/ament_cmake_environment_hooks/local_setup.bash

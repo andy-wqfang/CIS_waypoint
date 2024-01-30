@@ -1,0 +1,29 @@
+[0.062s] Invoking command in '/home/wqfang/research/CIS/build/mpc_package': CMAKE_PREFIX_PATH=/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/wqfang/research/CIS/build/mpc_package -- -j8 -l8
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target mpc[0m
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target get_score[0m
+[0.114s] [ 33%] Built target mpc
+[0.120s] [ 66%] Built target get_score
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target mpc_node[0m
+[0.145s] [100%] Built target mpc_node
+[0.157s] Invoked command in '/home/wqfang/research/CIS/build/mpc_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/wqfang/research/CIS/build/mpc_package -- -j8 -l8
+[0.201s] Invoking command in '/home/wqfang/research/CIS/build/mpc_package': CMAKE_PREFIX_PATH=/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/wqfang/research/CIS/build/mpc_package
+[0.206s] -- Install configuration: ""
+[0.206s] -- Execute custom install script
+[0.207s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/mpc_node
+[0.207s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/get_score
+[0.207s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/package_run_dependencies/mpc_package
+[0.207s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/parent_prefix_path/mpc_package
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.sh
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.dsv
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.sh
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.dsv
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.bash
+[0.208s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.sh
+[0.209s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.zsh
+[0.209s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.dsv
+[0.209s] -- Symlinking: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.dsv
+[0.216s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/packages/mpc_package
+[0.216s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig.cmake
+[0.216s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig-version.cmake
+[0.217s] -- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.xml
+[0.219s] Invoked command in '/home/wqfang/research/CIS/build/mpc_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/wqfang/research/CIS/build/mpc_package

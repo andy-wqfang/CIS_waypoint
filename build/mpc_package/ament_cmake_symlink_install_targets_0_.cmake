@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wqfang/research/CIS/build/mpc_package/mpc_node" "/home/wqfang/research/CIS/build/mpc_package/get_score" "TARGETS" "mpc_node" "get_score" "DESTINATION" "lib/mpc_package")

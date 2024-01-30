@@ -1,0 +1,223 @@
+#include <cmath>
+#include <chrono>
+#include <iostream>
+#include <thread>
+#include <vector>
+
+#include <cppad/cppad.hpp>
+#include <cppad/ipopt/solve.hpp>
+#include <Eigen/Eigen>
+
+#include "MPC.h"
+#include "json.hpp"
+
+// for convenience
+using json = nlohmann::json;
+
+// For converting back and forth between radians and degrees.
+constexpr double pi() { return M_PI; }
+double deg2rad(double x) { return x * pi() / 180; }
+double rad2deg(double x) { return x * 180 / pi(); }
+
+// Checks if the SocketIO event has JSON data.
+// If there is data the JSON object in string format will be returned,
+// else the empty string "" will be returned.
+
+// Evaluate a polynomial.
+double polyeval(Eigen::VectorXd coeffs, double x) {
+  double result = 0.0;
+  for (int i = 0; i < coeffs.size(); i++) {
+    result += coeffs[i] * pow(x, i);
+  }
+  return result;
+}
+
+// Fit a polynomial.
+// Adapted from
+// https://github.com/JuliaMath/Polynomials.jl/blob/master/src/Polynomials.jl#L676-L716
+Eigen::VectorXd polyfit(Eigen::VectorXd xvals, const Eigen::VectorXd &yvals,
+                        int order) {
+  assert(xvals.size() == yvals.size());
+  assert(order >= 1 && order <= xvals.size() - 1);
+  Eigen::MatrixXd A(xvals.size(), order + 1);
+
+  for (int i = 0; i < xvals.size(); i++) {
+    A(i, 0) = 1.0;
+  }
+
+  for (int j = 0; j < xvals.size(); j++) {
+    for (int i = 0; i < order; i++) {
+      A(j, i + 1) = A(j, i) * xvals(j);
+    }
+  }
+
+  auto Q = A.householderQr();
+  auto result = Q.solve(yvals);
+  return result;
+}
+
+int main() {
+
+  // MPC is initialized here!
+  MPC mpc;
+
+
+  string sdata = string(data).substr(0, length);
+  cout << sdata << endl;
+  if (sdata.size() > 2 && sdata[0] == '4' && sdata[1] == '2') {
+    string s = hasData(sdata);
+    if (!s.empty()) {
+      auto j = json::parse(s);
+      string event = j[0].get<string>();
+      if (event == "telemetry") {
+        // j[1] is the data JSON object
+        vector<double> ptsx = j[1]["ptsx"];
+        vector<double> ptsy = j[1]["ptsy"];
+        const double px = j[1]["x"];
+        const double py = j[1]["y"];
+        const double psi = j[1]["psi"];
+        const double v = j[1]["speed"];
+
+        /*
+          * Calculate steeering angle and throttle using MPC.
+          * Both are in between [-1, 1].
+          */
+        ///*********************************
+        ///*   Start of implementation     *
+        ///*********************************
+
+        // Transform ptsx, ptsy to car the coordinate
+        /// Implement in separate function
+        for (size_t i = 0; i < ptsx.size(); i++) {
+          const double dtx = ptsx[i] - px;
+          const double dty = ptsy[i] - py;
+
+          ptsx[i] = dtx * cos(psi) + dty * sin(psi);
+          ptsy[i] = dty * cos(psi) - dtx * sin(psi);
+        }
+
+        // Put ptsx and ptsy data into vectors
+        Eigen::VectorXd ptsxvec = Eigen::VectorXd::Map(ptsx.data(), ptsx.size());
+        Eigen::VectorXd ptsyvec = Eigen::VectorXd::Map(ptsy.data(), ptsy.size());
+
+        // Fit polynomial to x and y coordinates
+        auto coeffs = polyfit(ptsxvec, ptsyvec, 3);
+
+        // Shifted coords so car at 0,0 and angle is 0, so set x to 0
+
+        // Estimate cross-track error (horizontal works reasonably well unless there's a lot of warpage
+        const double cte = polyeval(coeffs, 0);
+        // Calculate orientation error
+        /// Check derivation is correct
+        const double epsi = -atan(coeffs[1]);
+
+        Eigen::VectorXd state(6);
+
+        /* Convert units */
+        std::cout << "cte: " << cte << "m?" << endl;
+
+        std::cout << "velocity: " << v << "mph" << endl;
+        // the car weaves a lot if I convert from mph to m/s
+        // v = v * 1600 / 3600;
+        // std::cout << "velocity: " << v << "m/s" << endl;
+
+        const double Lf = 2.67;
+
+        // predict the state 100ms into the future before you send it to the solver in order to compensate for the latency.
+
+        // Latency of 100ms, so predict 100ms (0.1s) ahead
+
+        const double dt = 0.1;
+        // Previous steering angle and throttle
+        const double delta = j[1]["steering_angle"];
+        const double prev_a = mpc.prev_a;
+
+        // Predict (x = y = psi = 0)
+        const double predicted_x = v * dt;
+        const double predicted_y = 0;
+        const double predicted_psi = - v * delta / Lf * dt;
+        const double predicted_v = v + prev_a * dt;
+        const double predicted_cte = cte + v * CppAD::sin(epsi) * dt;
+        const double predicted_epsi = epsi + predicted_psi;
+        state << predicted_x, predicted_y, predicted_psi, predicted_v, predicted_cte, predicted_epsi;
+
+        // Solve using MPC
+        // coeffs to predict future cte and epsi
+        auto result = mpc.Solve(state, coeffs);
+
+        const double steer_value = result[0]/ (deg2rad(25)*Lf);
+        std::cout << "steer_value: " << steer_value << endl;
+        const double throttle_value = result[1];
+
+        // Discarded.
+        // Delete attribute
+        // mpc.prev_delta = steer_value;
+        mpc.prev_a = throttle_value;
+
+        json msgJson;
+        msgJson["steering_angle"] = steer_value;
+        msgJson["throttle"] = throttle_value;
+
+        //Display the MPC predicted trajectory
+        vector<double> mpc_x_vals;
+        vector<double> mpc_y_vals;
+
+        //.. add (x,y) points to list here, points are in reference to the vehicle's coordinate system
+        // the points in the simulator are connected by a Green line
+        // std::cout << "result size: " << result.size() << endl;
+        for (size_t i = 2; i < result.size(); i++) {
+          if(i%2 == 0){
+            mpc_x_vals.push_back(result[i]);
+          } else {
+            mpc_y_vals.push_back(result[i]);
+          }
+        }
+
+
+        msgJson["mpc_x"] = mpc_x_vals;
+        msgJson["mpc_y"] = mpc_y_vals;
+
+        //Display the waypoints/reference line
+        vector<double> next_x_vals;
+        vector<double> next_y_vals;
+
+        next_x_vals.resize(static_cast<unsigned long>(ptsxvec.size()));
+        next_y_vals.resize(static_cast<unsigned long>(ptsyvec.size()));
+
+
+        //.. add (x,y) points to list here, points are in reference to the vehicle's coordinate system
+        // the points in the simulator are connected by a Yellow line
+        for (int i = 0; i < ptsxvec.size(); i++) {
+          next_x_vals[i] = ptsxvec[i];
+          next_y_vals[i] = ptsyvec[i];
+        }
+
+
+        msgJson["next_x"] = next_x_vals;
+        msgJson["next_y"] = next_y_vals;
+
+        ///*********************************
+        ///*    End of implementation      *
+        ///*********************************
+
+        auto msg = "42[\"steer\"," + msgJson.dump() + "]";
+        std::cout << msg << std::endl;
+        // Latency
+        // The purpose is to mimic real driving conditions where
+        // the car does actuate the commands instantly.
+        //
+        // Feel free to play around with this value but should be to drive
+        // around the track with 100ms latency.
+        //
+        // NOTE: REMEMBER TO SET THIS TO 100 MILLISECONDS BEFORE
+        // SUBMITTING.
+        this_thread::sleep_for(chrono::milliseconds(100));
+        ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
+      }
+    } else {
+      // Manual driving
+      std::string msg = "42[\"manual\",{}]";
+      ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
+    }
+  }
+  };

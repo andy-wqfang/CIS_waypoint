@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target get_score[0m
+[ 33%] Built target mpc
+[ 66%] Built target get_score
+[100%] Built target mpc_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/mpc_node
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/get_score
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/package_run_dependencies/mpc_package
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/parent_prefix_path/mpc_package
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.sh
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.dsv
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.bash
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.sh
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.zsh
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.dsv
+-- Symlinking: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.dsv
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/packages/mpc_package
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig.cmake
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig-version.cmake
+-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.xml

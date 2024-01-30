@@ -1,0 +1,321 @@
+[0.000000] (-) TimerEvent: {}
+[0.000748] (mpc_package) JobQueued: {'identifier': 'mpc_package', 'dependencies': OrderedDict()}
+[0.001741] (mpc_package) JobStarted: {'identifier': 'mpc_package'}
+[0.100871] (-) TimerEvent: {}
+[0.110884] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'cmake'}
+[0.111910] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'build'}
+[0.113179] (mpc_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wqfang/research/CIS/build/mpc_package', '--', '-j8', '-l8'], 'cwd': '/home/wqfang/research/CIS/build/mpc_package', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_PYTHON_VERSION', '3'), ('NAME', 'LAPTOP-VDSUODSJ'), ('PWD', '/home/wqfang/research/CIS/build/mpc_package'), ('LOGNAME', 'wqfang'), ('ROS_DOMAIN_ID', '24'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/wqfang'), ('LANG', 'en_US.UTF-8'), ('WSL_INTEROP', '/run/WSL/73686_interop'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('COLCON_PREFIX_PATH', '/home/wqfang/research/CIS/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wqfang'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('ROS_LOCALHOST_ONLY', '1'), ('WSLENV', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PATH', '/home/wqfang/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-19.0.2.7-hotspot/bin:/mnt/c/Users/china/AppData/Roaming/Python/Python311/Scripts:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/iverilog/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/china/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/china/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/china/AppData/Roaming/npm:/mnt/c/Users/china/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/china/AppData/Local/Pandoc/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.3/bin:/mnt/c/Program Files/CMake/bin:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('HOSTTYPE', 'x86_64'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/home/wqfang/research/CIS/src/mpc_package'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.182654] (mpc_package) StdoutLine: {'line': b'[ 33%] Built target mpc\n'}
+[0.190208] (mpc_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/get_score.dir/src/get_score.cpp.o\x1b[0m\n'}
+[0.201107] (-) TimerEvent: {}
+[0.219706] (mpc_package) StdoutLine: {'line': b'[ 83%] Built target mpc_node\n'}
+[0.301348] (-) TimerEvent: {}
+[0.405346] (-) TimerEvent: {}
+[0.506363] (-) TimerEvent: {}
+[0.607441] (-) TimerEvent: {}
+[0.708603] (-) TimerEvent: {}
+[0.809936] (-) TimerEvent: {}
+[0.911497] (-) TimerEvent: {}
+[1.012233] (-) TimerEvent: {}
+[1.112877] (-) TimerEvent: {}
+[1.213754] (-) TimerEvent: {}
+[1.314760] (-) TimerEvent: {}
+[1.415759] (-) TimerEvent: {}
+[1.517356] (-) TimerEvent: {}
+[1.620096] (-) TimerEvent: {}
+[1.720629] (-) TimerEvent: {}
+[1.822878] (-) TimerEvent: {}
+[1.923640] (-) TimerEvent: {}
+[2.025984] (-) TimerEvent: {}
+[2.126688] (-) TimerEvent: {}
+[2.227845] (-) TimerEvent: {}
+[2.329033] (-) TimerEvent: {}
+[2.429744] (-) TimerEvent: {}
+[2.531070] (-) TimerEvent: {}
+[2.634135] (-) TimerEvent: {}
+[2.735289] (-) TimerEvent: {}
+[2.836324] (-) TimerEvent: {}
+[2.937351] (-) TimerEvent: {}
+[3.038498] (-) TimerEvent: {}
+[3.139846] (-) TimerEvent: {}
+[3.246251] (-) TimerEvent: {}
+[3.348225] (-) TimerEvent: {}
+[3.452625] (-) TimerEvent: {}
+[3.553425] (-) TimerEvent: {}
+[3.654410] (-) TimerEvent: {}
+[3.755382] (-) TimerEvent: {}
+[3.856332] (-) TimerEvent: {}
+[3.957475] (-) TimerEvent: {}
+[4.059107] (-) TimerEvent: {}
+[4.163698] (-) TimerEvent: {}
+[4.264641] (-) TimerEvent: {}
+[4.368958] (-) TimerEvent: {}
+[4.477799] (-) TimerEvent: {}
+[4.582448] (-) TimerEvent: {}
+[4.683228] (-) TimerEvent: {}
+[4.783949] (-) TimerEvent: {}
+[4.885681] (-) TimerEvent: {}
+[4.986667] (-) TimerEvent: {}
+[5.087756] (-) TimerEvent: {}
+[5.188963] (-) TimerEvent: {}
+[5.290185] (-) TimerEvent: {}
+[5.391680] (-) TimerEvent: {}
+[5.492641] (-) TimerEvent: {}
+[5.565601] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Mpc_Node::mpc_callback(geometry_msgs::msg::PointStamped_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.566099] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:151:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.566178] (mpc_package) StderrLine: {'line': b'  151 |       std::printf(" cte mean  : %f    |   total number = \x1b[01;35m\x1b[K%d\x1b[m\x1b[K\\n", cte_sum/v_cte.size(), \x1b[32m\x1b[Kv_cte.size()\x1b[m\x1b[K);\n'}
+[5.566237] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~^\x1b[m\x1b[K                           \x1b[32m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.566295] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K|\x1b[m\x1b[K                                     \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.566348] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[Kint\x1b[m\x1b[K                                   \x1b[32m\x1b[Kstd::vector<double>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[5.566403] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.566458] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:152:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.566518] (mpc_package) StderrLine: {'line': b'  152 |       std::printf(" epsi mean : %f    |   total number = \x1b[01;35m\x1b[K%d\x1b[m\x1b[K\\n\\n", epsi_sum/v_epsi.size(), \x1b[32m\x1b[Kv_epsi.size()\x1b[m\x1b[K);\n'}
+[5.566579] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~^\x1b[m\x1b[K                               \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.566636] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K|\x1b[m\x1b[K                                          \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.566693] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[Kint\x1b[m\x1b[K                                        \x1b[32m\x1b[Kstd::vector<double>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[5.566750] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.566806] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:91:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ktic\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.566866] (mpc_package) StderrLine: {'line': b'   91 |       auto \x1b[01;35m\x1b[Ktic\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[5.566923] (mpc_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.594923] (-) TimerEvent: {}
+[5.695792] (-) TimerEvent: {}
+[5.796822] (-) TimerEvent: {}
+[5.899618] (-) TimerEvent: {}
+[6.000284] (-) TimerEvent: {}
+[6.100771] (-) TimerEvent: {}
+[6.201344] (-) TimerEvent: {}
+[6.302056] (-) TimerEvent: {}
+[6.402812] (-) TimerEvent: {}
+[6.503621] (-) TimerEvent: {}
+[6.608431] (-) TimerEvent: {}
+[6.709731] (-) TimerEvent: {}
+[6.815834] (-) TimerEvent: {}
+[6.916666] (-) TimerEvent: {}
+[7.022452] (-) TimerEvent: {}
+[7.126501] (-) TimerEvent: {}
+[7.232431] (-) TimerEvent: {}
+[7.334880] (-) TimerEvent: {}
+[7.438245] (-) TimerEvent: {}
+[7.542579] (-) TimerEvent: {}
+[7.643612] (-) TimerEvent: {}
+[7.744481] (-) TimerEvent: {}
+[7.845901] (-) TimerEvent: {}
+[7.946995] (-) TimerEvent: {}
+[8.048187] (-) TimerEvent: {}
+[8.157058] (-) TimerEvent: {}
+[8.265930] (-) TimerEvent: {}
+[8.369553] (-) TimerEvent: {}
+[8.478486] (-) TimerEvent: {}
+[8.579816] (-) TimerEvent: {}
+[8.680580] (-) TimerEvent: {}
+[8.781146] (-) TimerEvent: {}
+[8.890088] (-) TimerEvent: {}
+[8.995050] (-) TimerEvent: {}
+[9.096905] (-) TimerEvent: {}
+[9.198829] (-) TimerEvent: {}
+[9.300119] (-) TimerEvent: {}
+[9.406714] (-) TimerEvent: {}
+[9.513768] (-) TimerEvent: {}
+[9.620791] (-) TimerEvent: {}
+[9.727838] (-) TimerEvent: {}
+[9.833141] (-) TimerEvent: {}
+[9.939713] (-) TimerEvent: {}
+[10.046352] (-) TimerEvent: {}
+[10.153200] (-) TimerEvent: {}
+[10.259392] (-) TimerEvent: {}
+[10.363775] (-) TimerEvent: {}
+[10.465493] (-) TimerEvent: {}
+[10.566584] (-) TimerEvent: {}
+[10.668482] (-) TimerEvent: {}
+[10.769708] (-) TimerEvent: {}
+[10.872661] (-) TimerEvent: {}
+[10.978383] (-) TimerEvent: {}
+[11.085281] (-) TimerEvent: {}
+[11.186499] (-) TimerEvent: {}
+[11.287731] (-) TimerEvent: {}
+[11.388860] (-) TimerEvent: {}
+[11.490286] (-) TimerEvent: {}
+[11.591708] (-) TimerEvent: {}
+[11.692405] (-) TimerEvent: {}
+[11.793155] (-) TimerEvent: {}
+[11.895489] (-) TimerEvent: {}
+[11.997165] (-) TimerEvent: {}
+[12.099027] (-) TimerEvent: {}
+[12.200462] (-) TimerEvent: {}
+[12.301006] (-) TimerEvent: {}
+[12.402538] (-) TimerEvent: {}
+[12.504102] (-) TimerEvent: {}
+[12.605528] (-) TimerEvent: {}
+[12.706391] (-) TimerEvent: {}
+[12.808194] (-) TimerEvent: {}
+[12.910286] (-) TimerEvent: {}
+[13.010840] (-) TimerEvent: {}
+[13.112229] (-) TimerEvent: {}
+[13.212942] (-) TimerEvent: {}
+[13.314299] (-) TimerEvent: {}
+[13.416840] (-) TimerEvent: {}
+[13.519607] (-) TimerEvent: {}
+[13.620499] (-) TimerEvent: {}
+[13.721049] (-) TimerEvent: {}
+[13.821804] (-) TimerEvent: {}
+[13.922334] (-) TimerEvent: {}
+[14.024119] (-) TimerEvent: {}
+[14.125903] (-) TimerEvent: {}
+[14.226905] (-) TimerEvent: {}
+[14.328033] (-) TimerEvent: {}
+[14.430927] (-) TimerEvent: {}
+[14.533028] (-) TimerEvent: {}
+[14.634687] (-) TimerEvent: {}
+[14.736439] (-) TimerEvent: {}
+[14.838429] (-) TimerEvent: {}
+[14.939302] (-) TimerEvent: {}
+[15.040673] (-) TimerEvent: {}
+[15.141205] (-) TimerEvent: {}
+[15.241850] (-) TimerEvent: {}
+[15.342557] (-) TimerEvent: {}
+[15.444066] (-) TimerEvent: {}
+[15.544877] (-) TimerEvent: {}
+[15.645800] (-) TimerEvent: {}
+[15.747618] (-) TimerEvent: {}
+[15.848369] (-) TimerEvent: {}
+[15.949652] (-) TimerEvent: {}
+[16.050487] (-) TimerEvent: {}
+[16.151059] (-) TimerEvent: {}
+[16.251712] (-) TimerEvent: {}
+[16.352434] (-) TimerEvent: {}
+[16.453260] (-) TimerEvent: {}
+[16.554313] (-) TimerEvent: {}
+[16.655182] (-) TimerEvent: {}
+[16.757783] (-) TimerEvent: {}
+[16.859337] (-) TimerEvent: {}
+[16.961504] (-) TimerEvent: {}
+[17.063051] (-) TimerEvent: {}
+[17.165297] (-) TimerEvent: {}
+[17.265853] (-) TimerEvent: {}
+[17.368101] (-) TimerEvent: {}
+[17.502664] (-) TimerEvent: {}
+[17.603520] (-) TimerEvent: {}
+[17.704625] (-) TimerEvent: {}
+[17.806801] (-) TimerEvent: {}
+[17.907933] (-) TimerEvent: {}
+[18.009132] (-) TimerEvent: {}
+[18.110400] (-) TimerEvent: {}
+[18.213068] (-) TimerEvent: {}
+[18.315931] (-) TimerEvent: {}
+[18.421173] (-) TimerEvent: {}
+[18.528572] (-) TimerEvent: {}
+[18.629919] (-) TimerEvent: {}
+[18.730458] (-) TimerEvent: {}
+[18.830984] (-) TimerEvent: {}
+[18.931551] (-) TimerEvent: {}
+[19.033963] (-) TimerEvent: {}
+[19.137404] (-) TimerEvent: {}
+[19.238625] (-) TimerEvent: {}
+[19.340009] (-) TimerEvent: {}
+[19.441365] (-) TimerEvent: {}
+[19.546070] (-) TimerEvent: {}
+[19.647174] (-) TimerEvent: {}
+[19.751713] (-) TimerEvent: {}
+[19.852523] (-) TimerEvent: {}
+[19.957183] (-) TimerEvent: {}
+[20.060858] (-) TimerEvent: {}
+[20.165199] (-) TimerEvent: {}
+[20.269678] (-) TimerEvent: {}
+[20.371522] (-) TimerEvent: {}
+[20.474197] (-) TimerEvent: {}
+[20.578784] (-) TimerEvent: {}
+[20.683404] (-) TimerEvent: {}
+[20.784294] (-) TimerEvent: {}
+[20.885173] (-) TimerEvent: {}
+[20.986185] (-) TimerEvent: {}
+[21.089780] (-) TimerEvent: {}
+[21.194465] (-) TimerEvent: {}
+[21.295426] (-) TimerEvent: {}
+[21.396454] (-) TimerEvent: {}
+[21.498317] (-) TimerEvent: {}
+[21.607256] (-) TimerEvent: {}
+[21.716308] (-) TimerEvent: {}
+[21.820265] (-) TimerEvent: {}
+[21.924676] (-) TimerEvent: {}
+[22.026376] (-) TimerEvent: {}
+[22.127467] (-) TimerEvent: {}
+[22.228529] (-) TimerEvent: {}
+[22.329721] (-) TimerEvent: {}
+[22.431408] (-) TimerEvent: {}
+[22.540327] (-) TimerEvent: {}
+[22.641962] (-) TimerEvent: {}
+[22.750801] (-) TimerEvent: {}
+[22.857411] (-) TimerEvent: {}
+[22.961691] (-) TimerEvent: {}
+[23.069317] (-) TimerEvent: {}
+[23.174988] (-) TimerEvent: {}
+[23.284015] (-) TimerEvent: {}
+[23.388147] (-) TimerEvent: {}
+[23.492308] (-) TimerEvent: {}
+[23.601280] (-) TimerEvent: {}
+[23.702842] (-) TimerEvent: {}
+[23.803674] (-) TimerEvent: {}
+[23.904567] (-) TimerEvent: {}
+[24.007129] (-) TimerEvent: {}
+[24.109101] (-) TimerEvent: {}
+[24.215119] (-) TimerEvent: {}
+[24.317369] (-) TimerEvent: {}
+[24.422414] (-) TimerEvent: {}
+[24.525724] (-) TimerEvent: {}
+[24.631915] (-) TimerEvent: {}
+[24.734094] (-) TimerEvent: {}
+[24.840507] (-) TimerEvent: {}
+[24.941183] (-) TimerEvent: {}
+[25.041842] (-) TimerEvent: {}
+[25.142645] (-) TimerEvent: {}
+[25.244177] (-) TimerEvent: {}
+[25.347109] (-) TimerEvent: {}
+[25.449036] (-) TimerEvent: {}
+[25.552411] (-) TimerEvent: {}
+[25.658144] (-) TimerEvent: {}
+[25.761844] (-) TimerEvent: {}
+[25.862632] (-) TimerEvent: {}
+[25.971161] (-) TimerEvent: {}
+[26.075306] (-) TimerEvent: {}
+[26.184302] (-) TimerEvent: {}
+[26.283752] (mpc_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable get_score\x1b[0m\n'}
+[26.289658] (-) TimerEvent: {}
+[26.390570] (-) TimerEvent: {}
+[26.491251] (-) TimerEvent: {}
+[26.591943] (-) TimerEvent: {}
+[26.692726] (-) TimerEvent: {}
+[26.793487] (-) TimerEvent: {}
+[26.894842] (-) TimerEvent: {}
+[26.999167] (-) TimerEvent: {}
+[27.102011] (-) TimerEvent: {}
+[27.202746] (-) TimerEvent: {}
+[27.304194] (-) TimerEvent: {}
+[27.332973] (mpc_package) StdoutLine: {'line': b'[100%] Built target get_score\n'}
+[27.344385] (mpc_package) CommandEnded: {'returncode': 0}
+[27.380560] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'install'}
+[27.388134] (mpc_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wqfang/research/CIS/build/mpc_package'], 'cwd': '/home/wqfang/research/CIS/build/mpc_package', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_PYTHON_VERSION', '3'), ('NAME', 'LAPTOP-VDSUODSJ'), ('PWD', '/home/wqfang/research/CIS/build/mpc_package'), ('LOGNAME', 'wqfang'), ('ROS_DOMAIN_ID', '24'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/wqfang'), ('LANG', 'en_US.UTF-8'), ('WSL_INTEROP', '/run/WSL/73686_interop'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('COLCON_PREFIX_PATH', '/home/wqfang/research/CIS/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wqfang'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('ROS_LOCALHOST_ONLY', '1'), ('WSLENV', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PATH', '/home/wqfang/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-19.0.2.7-hotspot/bin:/mnt/c/Users/china/AppData/Roaming/Python/Python311/Scripts:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/iverilog/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/china/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/china/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/china/AppData/Roaming/npm:/mnt/c/Users/china/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/china/AppData/Local/Pandoc/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.3/bin:/mnt/c/Program Files/CMake/bin:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('HOSTTYPE', 'x86_64'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/home/wqfang/research/CIS/src/mpc_package'), ('_', '/usr/bin/env')]), 'shell': False}
+[27.394515] (mpc_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.395520] (mpc_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[27.395738] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/mpc_node\n'}
+[27.395979] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/lib/mpc_package/get_score\n'}
+[27.396822] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/package_run_dependencies/mpc_package\n'}
+[27.397465] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/parent_prefix_path/mpc_package\n'}
+[27.397967] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.sh\n'}
+[27.398677] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/ament_prefix_path.dsv\n'}
+[27.399249] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.sh\n'}
+[27.399787] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/environment/path.dsv\n'}
+[27.400370] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.bash\n'}
+[27.401128] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.sh\n'}
+[27.401627] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.zsh\n'}
+[27.402272] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/local_setup.dsv\n'}
+[27.402595] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.dsv\n'}
+[27.404511] (-) TimerEvent: {}
+[27.411463] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/ament_index/resource_index/packages/mpc_package\n'}
+[27.412001] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig.cmake\n'}
+[27.412679] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig-version.cmake\n'}
+[27.413094] (mpc_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqfang/research/CIS/install/mpc_package/share/mpc_package/package.xml\n'}
+[27.415783] (mpc_package) CommandEnded: {'returncode': 0}
+[27.505044] (-) TimerEvent: {}
+[27.605986] (-) TimerEvent: {}
+[27.628897] (mpc_package) JobEnded: {'identifier': 'mpc_package', 'rc': 0}
+[27.630125] (-) EventReactorShutdown: {}

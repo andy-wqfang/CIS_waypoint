@@ -1,0 +1,738 @@
+[0.000000] (-) TimerEvent: {}
+[0.002218] (mpc_package) JobQueued: {'identifier': 'mpc_package', 'dependencies': OrderedDict()}
+[0.003052] (mpc_package) JobStarted: {'identifier': 'mpc_package'}
+[0.099856] (-) TimerEvent: {}
+[0.103205] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'cmake'}
+[0.103962] (mpc_package) Command: {'cmd': ['/usr/bin/cmake', '/home/wqfang/research/CIS/src/mpc_package', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/wqfang/research/CIS/src/mpc_package/install/mpc_package'], 'cwd': '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_PYTHON_VERSION', '3'), ('NAME', 'LAPTOP-VDSUODSJ'), ('PWD', '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package'), ('LOGNAME', 'wqfang'), ('ROS_DOMAIN_ID', '24'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/wqfang'), ('LANG', 'en_US.UTF-8'), ('WSL_INTEROP', '/run/WSL/73686_interop'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('COLCON_PREFIX_PATH', '/home/wqfang/research/CIS/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wqfang'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('ROS_LOCALHOST_ONLY', '1'), ('WSLENV', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PATH', '/home/wqfang/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-19.0.2.7-hotspot/bin:/mnt/c/Users/china/AppData/Roaming/Python/Python311/Scripts:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/iverilog/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/china/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/china/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/china/AppData/Roaming/npm:/mnt/c/Users/china/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/china/AppData/Local/Pandoc/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.3/bin:/mnt/c/Program Files/CMake/bin:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('HOSTTYPE', 'x86_64'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/home/wqfang/research/CIS'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.200205] (-) TimerEvent: {}
+[0.301013] (-) TimerEvent: {}
+[0.351405] (mpc_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.401499] (-) TimerEvent: {}
+[0.502714] (-) TimerEvent: {}
+[0.604810] (-) TimerEvent: {}
+[0.706330] (-) TimerEvent: {}
+[0.808612] (-) TimerEvent: {}
+[0.909503] (-) TimerEvent: {}
+[1.010417] (-) TimerEvent: {}
+[1.111335] (-) TimerEvent: {}
+[1.213068] (-) TimerEvent: {}
+[1.288875] (mpc_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.315282] (-) TimerEvent: {}
+[1.416752] (-) TimerEvent: {}
+[1.517986] (-) TimerEvent: {}
+[1.618922] (-) TimerEvent: {}
+[1.720645] (-) TimerEvent: {}
+[1.825825] (-) TimerEvent: {}
+[1.928988] (-) TimerEvent: {}
+[2.030439] (-) TimerEvent: {}
+[2.131646] (-) TimerEvent: {}
+[2.233944] (-) TimerEvent: {}
+[2.255076] (mpc_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.334313] (-) TimerEvent: {}
+[2.435428] (-) TimerEvent: {}
+[2.453115] (mpc_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.460737] (mpc_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.461043] (mpc_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.461539] (mpc_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.464742] (mpc_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.536257] (-) TimerEvent: {}
+[2.637571] (-) TimerEvent: {}
+[2.711737] (mpc_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.719712] (mpc_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.720051] (mpc_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.720878] (mpc_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.724397] (mpc_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.737758] (-) TimerEvent: {}
+[2.838401] (-) TimerEvent: {}
+[2.939038] (-) TimerEvent: {}
+[2.968231] (mpc_package) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.039877] (-) TimerEvent: {}
+[3.055717] (mpc_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.081034] (mpc_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.141494] (-) TimerEvent: {}
+[3.242440] (-) TimerEvent: {}
+[3.343878] (-) TimerEvent: {}
+[3.384792] (mpc_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.388948] (mpc_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.398293] (mpc_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.410789] (mpc_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.428305] (mpc_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.444730] (-) TimerEvent: {}
+[3.508120] (mpc_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.511713] (mpc_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.547176] (-) TimerEvent: {}
+[3.647654] (-) TimerEvent: {}
+[3.753258] (-) TimerEvent: {}
+[3.854338] (-) TimerEvent: {}
+[3.955491] (-) TimerEvent: {}
+[4.056765] (-) TimerEvent: {}
+[4.157917] (-) TimerEvent: {}
+[4.260001] (-) TimerEvent: {}
+[4.361602] (-) TimerEvent: {}
+[4.462665] (-) TimerEvent: {}
+[4.563488] (-) TimerEvent: {}
+[4.664612] (-) TimerEvent: {}
+[4.765734] (-) TimerEvent: {}
+[4.867092] (-) TimerEvent: {}
+[4.967917] (-) TimerEvent: {}
+[5.068453] (-) TimerEvent: {}
+[5.169310] (-) TimerEvent: {}
+[5.270247] (-) TimerEvent: {}
+[5.373426] (-) TimerEvent: {}
+[5.474671] (-) TimerEvent: {}
+[5.579417] (-) TimerEvent: {}
+[5.680152] (-) TimerEvent: {}
+[5.780978] (-) TimerEvent: {}
+[5.881836] (-) TimerEvent: {}
+[5.983691] (-) TimerEvent: {}
+[6.085047] (-) TimerEvent: {}
+[6.186244] (-) TimerEvent: {}
+[6.287668] (-) TimerEvent: {}
+[6.388485] (-) TimerEvent: {}
+[6.490027] (-) TimerEvent: {}
+[6.591090] (-) TimerEvent: {}
+[6.691972] (-) TimerEvent: {}
+[6.792831] (-) TimerEvent: {}
+[6.818856] (mpc_package) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.893434] (-) TimerEvent: {}
+[6.994514] (-) TimerEvent: {}
+[7.095672] (-) TimerEvent: {}
+[7.196909] (-) TimerEvent: {}
+[7.297981] (-) TimerEvent: {}
+[7.401862] (-) TimerEvent: {}
+[7.502785] (-) TimerEvent: {}
+[7.603824] (-) TimerEvent: {}
+[7.704879] (-) TimerEvent: {}
+[7.806788] (-) TimerEvent: {}
+[7.908058] (-) TimerEvent: {}
+[8.009729] (-) TimerEvent: {}
+[8.111221] (-) TimerEvent: {}
+[8.213009] (-) TimerEvent: {}
+[8.314116] (-) TimerEvent: {}
+[8.415447] (-) TimerEvent: {}
+[8.516784] (-) TimerEvent: {}
+[8.617921] (-) TimerEvent: {}
+[8.719396] (-) TimerEvent: {}
+[8.820205] (-) TimerEvent: {}
+[8.921186] (-) TimerEvent: {}
+[9.022535] (-) TimerEvent: {}
+[9.125306] (-) TimerEvent: {}
+[9.226626] (-) TimerEvent: {}
+[9.328473] (-) TimerEvent: {}
+[9.430413] (-) TimerEvent: {}
+[9.533794] (-) TimerEvent: {}
+[9.636605] (-) TimerEvent: {}
+[9.737762] (-) TimerEvent: {}
+[9.838368] (-) TimerEvent: {}
+[9.939100] (-) TimerEvent: {}
+[10.040111] (-) TimerEvent: {}
+[10.089718] (mpc_package) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[10.140970] (-) TimerEvent: {}
+[10.241988] (-) TimerEvent: {}
+[10.344625] (-) TimerEvent: {}
+[10.447352] (-) TimerEvent: {}
+[10.552235] (-) TimerEvent: {}
+[10.657070] (-) TimerEvent: {}
+[10.758023] (-) TimerEvent: {}
+[10.858880] (-) TimerEvent: {}
+[10.962678] (-) TimerEvent: {}
+[11.065198] (-) TimerEvent: {}
+[11.169885] (-) TimerEvent: {}
+[11.274497] (-) TimerEvent: {}
+[11.376695] (-) TimerEvent: {}
+[11.480564] (-) TimerEvent: {}
+[11.581457] (-) TimerEvent: {}
+[11.682470] (-) TimerEvent: {}
+[11.786853] (-) TimerEvent: {}
+[11.890023] (-) TimerEvent: {}
+[11.990933] (-) TimerEvent: {}
+[12.091790] (-) TimerEvent: {}
+[12.197792] (-) TimerEvent: {}
+[12.298390] (-) TimerEvent: {}
+[12.401461] (-) TimerEvent: {}
+[12.505741] (-) TimerEvent: {}
+[12.607146] (-) TimerEvent: {}
+[12.707768] (-) TimerEvent: {}
+[12.809258] (-) TimerEvent: {}
+[12.909992] (-) TimerEvent: {}
+[13.010726] (-) TimerEvent: {}
+[13.112846] (-) TimerEvent: {}
+[13.213913] (-) TimerEvent: {}
+[13.315006] (-) TimerEvent: {}
+[13.416248] (-) TimerEvent: {}
+[13.518283] (-) TimerEvent: {}
+[13.618934] (-) TimerEvent: {}
+[13.721065] (-) TimerEvent: {}
+[13.822781] (-) TimerEvent: {}
+[13.924292] (-) TimerEvent: {}
+[14.026179] (-) TimerEvent: {}
+[14.127597] (-) TimerEvent: {}
+[14.229349] (-) TimerEvent: {}
+[14.330485] (-) TimerEvent: {}
+[14.431353] (-) TimerEvent: {}
+[14.532224] (-) TimerEvent: {}
+[14.636427] (-) TimerEvent: {}
+[14.737507] (-) TimerEvent: {}
+[14.846482] (-) TimerEvent: {}
+[14.955414] (-) TimerEvent: {}
+[15.064413] (-) TimerEvent: {}
+[15.165529] (-) TimerEvent: {}
+[15.266815] (-) TimerEvent: {}
+[15.368088] (-) TimerEvent: {}
+[15.468751] (-) TimerEvent: {}
+[15.569428] (-) TimerEvent: {}
+[15.676876] (-) TimerEvent: {}
+[15.777922] (-) TimerEvent: {}
+[15.879445] (-) TimerEvent: {}
+[15.980223] (-) TimerEvent: {}
+[16.083435] (-) TimerEvent: {}
+[16.184583] (-) TimerEvent: {}
+[16.293467] (-) TimerEvent: {}
+[16.394573] (-) TimerEvent: {}
+[16.502577] (-) TimerEvent: {}
+[16.603543] (-) TimerEvent: {}
+[16.710427] (-) TimerEvent: {}
+[16.812297] (-) TimerEvent: {}
+[16.916708] (-) TimerEvent: {}
+[17.018125] (-) TimerEvent: {}
+[17.120190] (-) TimerEvent: {}
+[17.143117] (mpc_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.151888] (mpc_package) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[17.220598] (-) TimerEvent: {}
+[17.321769] (-) TimerEvent: {}
+[17.398026] (mpc_package) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[17.398703] (mpc_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[17.422304] (-) TimerEvent: {}
+[17.523190] (-) TimerEvent: {}
+[17.591048] (mpc_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[17.592460] (mpc_package) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[17.623847] (-) TimerEvent: {}
+[17.725005] (-) TimerEvent: {}
+[17.785106] (mpc_package) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.6 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[17.825829] (-) TimerEvent: {}
+[17.854887] (mpc_package) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[17.903287] (mpc_package) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[17.927929] (-) TimerEvent: {}
+[18.009632] (mpc_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[18.029129] (-) TimerEvent: {}
+[18.095821] (mpc_package) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[18.129384] (-) TimerEvent: {}
+[18.185208] (mpc_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.186157] (mpc_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/wqfang/research/CIS/src/mpc_package/include/mpc_package;/home/wqfang/research/CIS/src/mpc_package/include/mpc_package/MPC;/home/wqfang/research/CIS/src/mpc_package/include/mpc_package/Eigen;/home/wqfang/research/CIS/src/mpc_package/include/mpc_package/Json/include\n'}
+[18.186375] (mpc_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.233149] (-) TimerEvent: {}
+[18.291738] (mpc_package) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[18.292094] (mpc_package) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[18.304351] (mpc_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[18.326492] (mpc_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.333825] (-) TimerEvent: {}
+[18.340751] (mpc_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[18.434507] (-) TimerEvent: {}
+[18.435444] (mpc_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.435723] (mpc_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.447357] (mpc_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.449044] (mpc_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.463884] (mpc_package) StdoutLine: {'line': b'-- Generating done\n'}
+[18.465470] (mpc_package) StdoutLine: {'line': b'-- Build files have been written to: /home/wqfang/research/CIS/src/mpc_package/build/mpc_package\n'}
+[18.485021] (mpc_package) CommandEnded: {'returncode': 0}
+[18.485854] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'build'}
+[18.487385] (mpc_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package', '--', '-j8', '-l8'], 'cwd': '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_PYTHON_VERSION', '3'), ('NAME', 'LAPTOP-VDSUODSJ'), ('PWD', '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package'), ('LOGNAME', 'wqfang'), ('ROS_DOMAIN_ID', '24'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/wqfang'), ('LANG', 'en_US.UTF-8'), ('WSL_INTEROP', '/run/WSL/73686_interop'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('COLCON_PREFIX_PATH', '/home/wqfang/research/CIS/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wqfang'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('ROS_LOCALHOST_ONLY', '1'), ('WSLENV', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PATH', '/home/wqfang/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-19.0.2.7-hotspot/bin:/mnt/c/Users/china/AppData/Roaming/Python/Python311/Scripts:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/iverilog/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/china/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/china/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/china/AppData/Roaming/npm:/mnt/c/Users/china/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/china/AppData/Local/Pandoc/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.3/bin:/mnt/c/Program Files/CMake/bin:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('HOSTTYPE', 'x86_64'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/home/wqfang/research/CIS'), ('_', '/usr/bin/env')]), 'shell': False}
+[18.531834] (mpc_package) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/get_score.dir/src/get_score.cpp.o\x1b[0m\n'}
+[18.532330] (mpc_package) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mpc.dir/include/mpc_package/MPC/MPC.cpp.o\x1b[0m\n'}
+[18.534877] (-) TimerEvent: {}
+[18.636150] (-) TimerEvent: {}
+[18.736946] (-) TimerEvent: {}
+[18.837880] (-) TimerEvent: {}
+[18.938418] (-) TimerEvent: {}
+[19.039498] (-) TimerEvent: {}
+[19.140192] (-) TimerEvent: {}
+[19.240965] (-) TimerEvent: {}
+[19.341746] (-) TimerEvent: {}
+[19.442538] (-) TimerEvent: {}
+[19.544508] (-) TimerEvent: {}
+[19.647254] (-) TimerEvent: {}
+[19.747816] (-) TimerEvent: {}
+[19.850576] (-) TimerEvent: {}
+[19.952265] (-) TimerEvent: {}
+[20.053094] (-) TimerEvent: {}
+[20.154159] (-) TimerEvent: {}
+[20.255184] (-) TimerEvent: {}
+[20.356378] (-) TimerEvent: {}
+[20.457753] (-) TimerEvent: {}
+[20.560026] (-) TimerEvent: {}
+[20.662349] (-) TimerEvent: {}
+[20.763418] (-) TimerEvent: {}
+[20.864396] (-) TimerEvent: {}
+[20.965600] (-) TimerEvent: {}
+[21.067392] (-) TimerEvent: {}
+[21.171307] (-) TimerEvent: {}
+[21.273963] (-) TimerEvent: {}
+[21.375114] (-) TimerEvent: {}
+[21.477087] (-) TimerEvent: {}
+[21.579160] (-) TimerEvent: {}
+[21.681293] (-) TimerEvent: {}
+[21.783772] (-) TimerEvent: {}
+[21.884937] (-) TimerEvent: {}
+[21.986186] (-) TimerEvent: {}
+[22.087349] (-) TimerEvent: {}
+[22.187971] (-) TimerEvent: {}
+[22.293266] (-) TimerEvent: {}
+[22.394417] (-) TimerEvent: {}
+[22.495577] (-) TimerEvent: {}
+[22.599310] (-) TimerEvent: {}
+[22.700097] (-) TimerEvent: {}
+[22.800971] (-) TimerEvent: {}
+[22.901902] (-) TimerEvent: {}
+[23.002909] (-) TimerEvent: {}
+[23.103574] (-) TimerEvent: {}
+[23.204664] (-) TimerEvent: {}
+[23.306762] (-) TimerEvent: {}
+[23.407981] (-) TimerEvent: {}
+[23.508636] (-) TimerEvent: {}
+[23.609342] (-) TimerEvent: {}
+[23.712694] (-) TimerEvent: {}
+[23.813711] (-) TimerEvent: {}
+[23.914918] (-) TimerEvent: {}
+[24.015804] (-) TimerEvent: {}
+[24.116920] (-) TimerEvent: {}
+[24.217915] (-) TimerEvent: {}
+[24.318421] (-) TimerEvent: {}
+[24.422422] (-) TimerEvent: {}
+[24.442318] (mpc_package) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libmpc.a\x1b[0m\n'}
+[24.514043] (mpc_package) StdoutLine: {'line': b'[ 50%] Built target mpc\n'}
+[24.523128] (-) TimerEvent: {}
+[24.548210] (mpc_package) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/mpc_node.dir/src/mpc_node.cpp.o\x1b[0m\n'}
+[24.601369] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Mpc_Node::mpc_callback(geometry_msgs::msg::PointStamped_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.601851] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:151:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.602013] (mpc_package) StderrLine: {'line': b'  151 |       std::printf(" cte mean  : %f    |   total number = \x1b[01;35m\x1b[K%d\x1b[m\x1b[K\\n", cte_sum/v_cte.size(), \x1b[32m\x1b[Kv_cte.size()\x1b[m\x1b[K);\n'}
+[24.602117] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~^\x1b[m\x1b[K                           \x1b[32m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.602187] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K|\x1b[m\x1b[K                                     \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[24.602253] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[Kint\x1b[m\x1b[K                                   \x1b[32m\x1b[Kstd::vector<double>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[24.602323] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[24.602414] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:152:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.602552] (mpc_package) StderrLine: {'line': b'  152 |       std::printf(" epsi mean : %f    |   total number = \x1b[01;35m\x1b[K%d\x1b[m\x1b[K\\n\\n", epsi_sum/v_epsi.size(), \x1b[32m\x1b[Kv_epsi.size()\x1b[m\x1b[K);\n'}
+[24.602644] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~^\x1b[m\x1b[K                               \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.602714] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K|\x1b[m\x1b[K                                          \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[24.602782] (mpc_package) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[Kint\x1b[m\x1b[K                                        \x1b[32m\x1b[Kstd::vector<double>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[24.602851] (mpc_package) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[24.602917] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/get_score.cpp:91:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ktic\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.602986] (mpc_package) StderrLine: {'line': b'   91 |       auto \x1b[01;35m\x1b[Ktic\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[24.603053] (mpc_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[24.623783] (-) TimerEvent: {}
+[24.727366] (-) TimerEvent: {}
+[24.836289] (-) TimerEvent: {}
+[24.945229] (-) TimerEvent: {}
+[25.049925] (-) TimerEvent: {}
+[25.150712] (-) TimerEvent: {}
+[25.251539] (-) TimerEvent: {}
+[25.352346] (-) TimerEvent: {}
+[25.453432] (-) TimerEvent: {}
+[25.554731] (-) TimerEvent: {}
+[25.655981] (-) TimerEvent: {}
+[25.757219] (-) TimerEvent: {}
+[25.857949] (-) TimerEvent: {}
+[25.958500] (-) TimerEvent: {}
+[26.059196] (-) TimerEvent: {}
+[26.159956] (-) TimerEvent: {}
+[26.263241] (-) TimerEvent: {}
+[26.366715] (-) TimerEvent: {}
+[26.470697] (-) TimerEvent: {}
+[26.571671] (-) TimerEvent: {}
+[26.672748] (-) TimerEvent: {}
+[26.776314] (-) TimerEvent: {}
+[26.879762] (-) TimerEvent: {}
+[26.988617] (-) TimerEvent: {}
+[27.097653] (-) TimerEvent: {}
+[27.200330] (-) TimerEvent: {}
+[27.309215] (-) TimerEvent: {}
+[27.414832] (-) TimerEvent: {}
+[27.523754] (-) TimerEvent: {}
+[27.631514] (-) TimerEvent: {}
+[27.734464] (-) TimerEvent: {}
+[27.835509] (-) TimerEvent: {}
+[27.936750] (-) TimerEvent: {}
+[28.037949] (-) TimerEvent: {}
+[28.138659] (-) TimerEvent: {}
+[28.239282] (-) TimerEvent: {}
+[28.339932] (-) TimerEvent: {}
+[28.442163] (-) TimerEvent: {}
+[28.544676] (-) TimerEvent: {}
+[28.645807] (-) TimerEvent: {}
+[28.747217] (-) TimerEvent: {}
+[28.847922] (-) TimerEvent: {}
+[28.948479] (-) TimerEvent: {}
+[29.049169] (-) TimerEvent: {}
+[29.150534] (-) TimerEvent: {}
+[29.251562] (-) TimerEvent: {}
+[29.352507] (-) TimerEvent: {}
+[29.454079] (-) TimerEvent: {}
+[29.557517] (-) TimerEvent: {}
+[29.658692] (-) TimerEvent: {}
+[29.761011] (-) TimerEvent: {}
+[29.863421] (-) TimerEvent: {}
+[29.966159] (-) TimerEvent: {}
+[30.068068] (-) TimerEvent: {}
+[30.091661] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Mpc_Node::mpc_callback(geometry_msgs::msg::PointStamped_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.091995] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:127:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.092082] (mpc_package) StderrLine: {'line': b'  127 |         for(int i = 0; \x1b[01;35m\x1b[Ki < ptsx.size()\x1b[m\x1b[K; i ++)\n'}
+[30.092141] (mpc_package) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.124981] (mpc_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[30.125261] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[30.125414] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[30.125594] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[30.125804] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[30.125879] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[30.125951] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[30.126015] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[30.126089] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[30.126165] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[30.126234] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[30.126296] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:13\x1b[m\x1b[K:\n'}
+[30.126362] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:288:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.126430] (mpc_package) StderrLine: {'line': b'  288 |       RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Full Code : %f MPC Calc = %f"\x1b[m\x1b[K, \x1b[32m\x1b[Ktime_span\x1b[m\x1b[K, time_span_1);\n'}
+[30.126495] (mpc_package) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.126558] (mpc_package) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[30.126620] (mpc_package) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\n'}
+[30.126682] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:288:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[30.126741] (mpc_package) StderrLine: {'line': b'  288 |       RCLCPP_INFO(this->get_logger(), "Full Code : \x1b[01;36m\x1b[K%f\x1b[m\x1b[K MPC Calc = %f", time_span, time_span_1);\n'}
+[30.126802] (mpc_package) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[30.126861] (mpc_package) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[30.126922] (mpc_package) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[30.126981] (mpc_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[30.127039] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[30.127106] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[30.127167] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[30.127226] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[30.127285] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[30.127344] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[30.127405] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[30.127464] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[30.127522] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[30.127581] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[30.127640] (mpc_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:13\x1b[m\x1b[K:\n'}
+[30.127704] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:288:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.127766] (mpc_package) StderrLine: {'line': b'  288 |       RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Full Code : %f MPC Calc = %f"\x1b[m\x1b[K, time_span, \x1b[32m\x1b[Ktime_span_1\x1b[m\x1b[K);\n'}
+[30.127828] (mpc_package) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K             \x1b[32m\x1b[K~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.127905] (mpc_package) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[30.127993] (mpc_package) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\n'}
+[30.128085] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:288:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[30.128185] (mpc_package) StderrLine: {'line': b'  288 |       RCLCPP_INFO(this->get_logger(), "Full Code : %f MPC Calc = \x1b[01;36m\x1b[K%f\x1b[m\x1b[K", time_span, time_span_1);\n'}
+[30.128278] (mpc_package) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[30.128374] (mpc_package) StderrLine: {'line': b'      |                                                                   \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[30.128466] (mpc_package) StderrLine: {'line': b'      |                                                                   \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[30.128563] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:179:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ktic_0\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.128662] (mpc_package) StderrLine: {'line': b'  179 |       auto \x1b[01;35m\x1b[Ktic_0\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[30.128755] (mpc_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[30.128846] (mpc_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wqfang/research/CIS/src/mpc_package/src/mpc_node.cpp:191:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ktok_0\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.128945] (mpc_package) StderrLine: {'line': b'  191 |       auto \x1b[01;35m\x1b[Ktok_0\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[30.129039] (mpc_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[30.170035] (-) TimerEvent: {}
+[30.270716] (-) TimerEvent: {}
+[30.371823] (-) TimerEvent: {}
+[30.472781] (-) TimerEvent: {}
+[30.573761] (-) TimerEvent: {}
+[30.674841] (-) TimerEvent: {}
+[30.776606] (-) TimerEvent: {}
+[30.877734] (-) TimerEvent: {}
+[30.979695] (-) TimerEvent: {}
+[31.080716] (-) TimerEvent: {}
+[31.181604] (-) TimerEvent: {}
+[31.282418] (-) TimerEvent: {}
+[31.383424] (-) TimerEvent: {}
+[31.484430] (-) TimerEvent: {}
+[31.587958] (-) TimerEvent: {}
+[31.688573] (-) TimerEvent: {}
+[31.789120] (-) TimerEvent: {}
+[31.889802] (-) TimerEvent: {}
+[31.990467] (-) TimerEvent: {}
+[32.091251] (-) TimerEvent: {}
+[32.193063] (-) TimerEvent: {}
+[32.294120] (-) TimerEvent: {}
+[32.395208] (-) TimerEvent: {}
+[32.496464] (-) TimerEvent: {}
+[32.597799] (-) TimerEvent: {}
+[32.698403] (-) TimerEvent: {}
+[32.799279] (-) TimerEvent: {}
+[32.900080] (-) TimerEvent: {}
+[33.000813] (-) TimerEvent: {}
+[33.101691] (-) TimerEvent: {}
+[33.203448] (-) TimerEvent: {}
+[33.304715] (-) TimerEvent: {}
+[33.411423] (-) TimerEvent: {}
+[33.512304] (-) TimerEvent: {}
+[33.618462] (-) TimerEvent: {}
+[33.719075] (-) TimerEvent: {}
+[33.820280] (-) TimerEvent: {}
+[33.921037] (-) TimerEvent: {}
+[34.024575] (-) TimerEvent: {}
+[34.128934] (-) TimerEvent: {}
+[34.229661] (-) TimerEvent: {}
+[34.330338] (-) TimerEvent: {}
+[34.431074] (-) TimerEvent: {}
+[34.533466] (-) TimerEvent: {}
+[34.634323] (-) TimerEvent: {}
+[34.735527] (-) TimerEvent: {}
+[34.836925] (-) TimerEvent: {}
+[34.938492] (-) TimerEvent: {}
+[35.040622] (-) TimerEvent: {}
+[35.142029] (-) TimerEvent: {}
+[35.244647] (-) TimerEvent: {}
+[35.345766] (-) TimerEvent: {}
+[35.447568] (-) TimerEvent: {}
+[35.548145] (-) TimerEvent: {}
+[35.648902] (-) TimerEvent: {}
+[35.750481] (-) TimerEvent: {}
+[35.851781] (-) TimerEvent: {}
+[35.952693] (-) TimerEvent: {}
+[36.053783] (-) TimerEvent: {}
+[36.154853] (-) TimerEvent: {}
+[36.256843] (-) TimerEvent: {}
+[36.358128] (-) TimerEvent: {}
+[36.459488] (-) TimerEvent: {}
+[36.560713] (-) TimerEvent: {}
+[36.662103] (-) TimerEvent: {}
+[36.764096] (-) TimerEvent: {}
+[36.865228] (-) TimerEvent: {}
+[36.967361] (-) TimerEvent: {}
+[37.069547] (-) TimerEvent: {}
+[37.170277] (-) TimerEvent: {}
+[37.271112] (-) TimerEvent: {}
+[37.372006] (-) TimerEvent: {}
+[37.473003] (-) TimerEvent: {}
+[37.574080] (-) TimerEvent: {}
+[37.675327] (-) TimerEvent: {}
+[37.777344] (-) TimerEvent: {}
+[37.879229] (-) TimerEvent: {}
+[37.981354] (-) TimerEvent: {}
+[38.083646] (-) TimerEvent: {}
+[38.184601] (-) TimerEvent: {}
+[38.285797] (-) TimerEvent: {}
+[38.387041] (-) TimerEvent: {}
+[38.487987] (-) TimerEvent: {}
+[38.592606] (-) TimerEvent: {}
+[38.697152] (-) TimerEvent: {}
+[38.798056] (-) TimerEvent: {}
+[38.902720] (-) TimerEvent: {}
+[39.003809] (-) TimerEvent: {}
+[39.108359] (-) TimerEvent: {}
+[39.211358] (-) TimerEvent: {}
+[39.312333] (-) TimerEvent: {}
+[39.418217] (-) TimerEvent: {}
+[39.522184] (-) TimerEvent: {}
+[39.627350] (-) TimerEvent: {}
+[39.727969] (-) TimerEvent: {}
+[39.829956] (-) TimerEvent: {}
+[39.931569] (-) TimerEvent: {}
+[40.033982] (-) TimerEvent: {}
+[40.135837] (-) TimerEvent: {}
+[40.237987] (-) TimerEvent: {}
+[40.340240] (-) TimerEvent: {}
+[40.442422] (-) TimerEvent: {}
+[40.548387] (-) TimerEvent: {}
+[40.648946] (-) TimerEvent: {}
+[40.749491] (-) TimerEvent: {}
+[40.850094] (-) TimerEvent: {}
+[40.950759] (-) TimerEvent: {}
+[41.051637] (-) TimerEvent: {}
+[41.152603] (-) TimerEvent: {}
+[41.253616] (-) TimerEvent: {}
+[41.354519] (-) TimerEvent: {}
+[41.455757] (-) TimerEvent: {}
+[41.556586] (-) TimerEvent: {}
+[41.661302] (-) TimerEvent: {}
+[41.762341] (-) TimerEvent: {}
+[41.864160] (-) TimerEvent: {}
+[41.966166] (-) TimerEvent: {}
+[42.066923] (-) TimerEvent: {}
+[42.167532] (-) TimerEvent: {}
+[42.268824] (-) TimerEvent: {}
+[42.369417] (-) TimerEvent: {}
+[42.473931] (-) TimerEvent: {}
+[42.574969] (-) TimerEvent: {}
+[42.679520] (-) TimerEvent: {}
+[42.780224] (-) TimerEvent: {}
+[42.881792] (-) TimerEvent: {}
+[42.984510] (-) TimerEvent: {}
+[43.086618] (-) TimerEvent: {}
+[43.187659] (-) TimerEvent: {}
+[43.288223] (-) TimerEvent: {}
+[43.388760] (-) TimerEvent: {}
+[43.490059] (-) TimerEvent: {}
+[43.590775] (-) TimerEvent: {}
+[43.691639] (-) TimerEvent: {}
+[43.792534] (-) TimerEvent: {}
+[43.893471] (-) TimerEvent: {}
+[44.029086] (-) TimerEvent: {}
+[44.130618] (-) TimerEvent: {}
+[44.236349] (-) TimerEvent: {}
+[44.340203] (-) TimerEvent: {}
+[44.441738] (-) TimerEvent: {}
+[44.542532] (-) TimerEvent: {}
+[44.644413] (-) TimerEvent: {}
+[44.745193] (-) TimerEvent: {}
+[44.847565] (-) TimerEvent: {}
+[44.949460] (-) TimerEvent: {}
+[45.050233] (-) TimerEvent: {}
+[45.153233] (-) TimerEvent: {}
+[45.255117] (-) TimerEvent: {}
+[45.356366] (-) TimerEvent: {}
+[45.459764] (-) TimerEvent: {}
+[45.560478] (-) TimerEvent: {}
+[45.663017] (-) TimerEvent: {}
+[45.764021] (-) TimerEvent: {}
+[45.865139] (-) TimerEvent: {}
+[45.966397] (-) TimerEvent: {}
+[46.068606] (-) TimerEvent: {}
+[46.169340] (-) TimerEvent: {}
+[46.270000] (-) TimerEvent: {}
+[46.370873] (-) TimerEvent: {}
+[46.471634] (-) TimerEvent: {}
+[46.572644] (-) TimerEvent: {}
+[46.674605] (-) TimerEvent: {}
+[46.775765] (-) TimerEvent: {}
+[46.877675] (-) TimerEvent: {}
+[46.978172] (-) TimerEvent: {}
+[47.078827] (-) TimerEvent: {}
+[47.179400] (-) TimerEvent: {}
+[47.280086] (-) TimerEvent: {}
+[47.380861] (-) TimerEvent: {}
+[47.485127] (-) TimerEvent: {}
+[47.586311] (-) TimerEvent: {}
+[47.687614] (-) TimerEvent: {}
+[47.788420] (-) TimerEvent: {}
+[47.889090] (-) TimerEvent: {}
+[47.989732] (-) TimerEvent: {}
+[48.092034] (-) TimerEvent: {}
+[48.193024] (-) TimerEvent: {}
+[48.295603] (-) TimerEvent: {}
+[48.396349] (-) TimerEvent: {}
+[48.497866] (-) TimerEvent: {}
+[48.598439] (-) TimerEvent: {}
+[48.699827] (-) TimerEvent: {}
+[48.800630] (-) TimerEvent: {}
+[48.903112] (-) TimerEvent: {}
+[49.004126] (-) TimerEvent: {}
+[49.052830] (mpc_package) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable get_score\x1b[0m\n'}
+[49.104864] (-) TimerEvent: {}
+[49.206560] (-) TimerEvent: {}
+[49.307922] (-) TimerEvent: {}
+[49.408515] (-) TimerEvent: {}
+[49.509140] (-) TimerEvent: {}
+[49.609836] (-) TimerEvent: {}
+[49.710773] (-) TimerEvent: {}
+[49.812082] (-) TimerEvent: {}
+[49.913095] (-) TimerEvent: {}
+[50.014200] (-) TimerEvent: {}
+[50.115269] (-) TimerEvent: {}
+[50.216527] (-) TimerEvent: {}
+[50.249109] (mpc_package) StdoutLine: {'line': b'[ 83%] Built target get_score\n'}
+[50.317642] (-) TimerEvent: {}
+[50.420739] (-) TimerEvent: {}
+[50.525232] (-) TimerEvent: {}
+[50.626540] (-) TimerEvent: {}
+[50.731554] (-) TimerEvent: {}
+[50.832857] (-) TimerEvent: {}
+[50.933920] (-) TimerEvent: {}
+[51.035066] (-) TimerEvent: {}
+[51.137950] (-) TimerEvent: {}
+[51.238687] (-) TimerEvent: {}
+[51.339952] (-) TimerEvent: {}
+[51.446601] (-) TimerEvent: {}
+[51.553471] (-) TimerEvent: {}
+[51.660348] (-) TimerEvent: {}
+[51.767550] (-) TimerEvent: {}
+[51.871133] (-) TimerEvent: {}
+[51.978058] (-) TimerEvent: {}
+[52.079948] (-) TimerEvent: {}
+[52.186568] (-) TimerEvent: {}
+[52.293269] (-) TimerEvent: {}
+[52.399264] (-) TimerEvent: {}
+[52.501263] (-) TimerEvent: {}
+[52.604544] (-) TimerEvent: {}
+[52.711052] (-) TimerEvent: {}
+[52.816172] (-) TimerEvent: {}
+[52.923035] (-) TimerEvent: {}
+[53.029733] (-) TimerEvent: {}
+[53.135151] (-) TimerEvent: {}
+[53.236284] (-) TimerEvent: {}
+[53.338012] (-) TimerEvent: {}
+[53.438664] (-) TimerEvent: {}
+[53.539321] (-) TimerEvent: {}
+[53.640101] (-) TimerEvent: {}
+[53.741774] (-) TimerEvent: {}
+[53.843416] (-) TimerEvent: {}
+[53.945091] (-) TimerEvent: {}
+[54.046262] (-) TimerEvent: {}
+[54.147586] (-) TimerEvent: {}
+[54.248090] (-) TimerEvent: {}
+[54.352160] (-) TimerEvent: {}
+[54.453492] (-) TimerEvent: {}
+[54.562382] (-) TimerEvent: {}
+[54.667698] (-) TimerEvent: {}
+[54.775715] (-) TimerEvent: {}
+[54.877434] (-) TimerEvent: {}
+[54.983614] (-) TimerEvent: {}
+[55.086241] (-) TimerEvent: {}
+[55.188249] (-) TimerEvent: {}
+[55.289875] (-) TimerEvent: {}
+[55.390598] (-) TimerEvent: {}
+[55.497109] (-) TimerEvent: {}
+[55.597936] (-) TimerEvent: {}
+[55.698645] (-) TimerEvent: {}
+[55.804311] (-) TimerEvent: {}
+[55.906669] (-) TimerEvent: {}
+[56.007369] (-) TimerEvent: {}
+[56.107876] (-) TimerEvent: {}
+[56.210216] (-) TimerEvent: {}
+[56.310826] (-) TimerEvent: {}
+[56.411641] (-) TimerEvent: {}
+[56.513564] (-) TimerEvent: {}
+[56.618957] (-) TimerEvent: {}
+[56.719644] (-) TimerEvent: {}
+[56.828064] (-) TimerEvent: {}
+[56.932898] (-) TimerEvent: {}
+[56.972537] (mpc_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mpc_node\x1b[0m\n'}
+[57.034974] (-) TimerEvent: {}
+[57.137888] (-) TimerEvent: {}
+[57.238674] (-) TimerEvent: {}
+[57.339320] (-) TimerEvent: {}
+[57.440003] (-) TimerEvent: {}
+[57.540898] (-) TimerEvent: {}
+[57.642543] (-) TimerEvent: {}
+[57.744592] (-) TimerEvent: {}
+[57.845824] (-) TimerEvent: {}
+[57.950144] (-) TimerEvent: {}
+[58.051020] (-) TimerEvent: {}
+[58.152758] (-) TimerEvent: {}
+[58.232406] (mpc_package) StdoutLine: {'line': b'[100%] Built target mpc_node\n'}
+[58.245046] (mpc_package) CommandEnded: {'returncode': 0}
+[58.253313] (-) TimerEvent: {}
+[58.284371] (mpc_package) JobProgress: {'identifier': 'mpc_package', 'progress': 'install'}
+[58.295746] (mpc_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package'], 'cwd': '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_PYTHON_VERSION', '3'), ('NAME', 'LAPTOP-VDSUODSJ'), ('PWD', '/home/wqfang/research/CIS/src/mpc_package/build/mpc_package'), ('LOGNAME', 'wqfang'), ('ROS_DOMAIN_ID', '24'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/wqfang'), ('LANG', 'en_US.UTF-8'), ('WSL_INTEROP', '/run/WSL/73686_interop'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('WAYLAND_DISPLAY', 'wayland-0'), ('AMENT_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/wqfang/research/CIS/install/mpc_package:/opt/ros/humble'), ('COLCON_PREFIX_PATH', '/home/wqfang/research/CIS/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wqfang'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('ROS_LOCALHOST_ONLY', '1'), ('WSLENV', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PATH', '/home/wqfang/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-19.0.2.7-hotspot/bin:/mnt/c/Users/china/AppData/Roaming/Python/Python311/Scripts:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/iverilog/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/china/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/china/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/china/AppData/Roaming/npm:/mnt/c/Users/china/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/china/AppData/Local/Pandoc/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.3/bin:/mnt/c/Program Files/CMake/bin:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('HOSTTYPE', 'x86_64'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('ROS_DISTRO', 'humble'), ('OLDPWD', '/home/wqfang/research/CIS'), ('_', '/usr/bin/env')]), 'shell': False}
+[58.307222] (mpc_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[58.309888] (mpc_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[58.311521] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/lib/mpc_package/mpc_node\n'}
+[58.320214] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/lib/mpc_package/get_score\n'}
+[58.330761] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/ament_index/resource_index/package_run_dependencies/mpc_package\n'}
+[58.340206] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/ament_index/resource_index/parent_prefix_path/mpc_package\n'}
+[58.351834] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/environment/ament_prefix_path.sh\n'}
+[58.353579] (-) TimerEvent: {}
+[58.362269] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/environment/ament_prefix_path.dsv\n'}
+[58.373567] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/environment/path.sh\n'}
+[58.381885] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/environment/path.dsv\n'}
+[58.393327] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/local_setup.bash\n'}
+[58.402341] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/local_setup.sh\n'}
+[58.411847] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/local_setup.zsh\n'}
+[58.422566] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/local_setup.dsv\n'}
+[58.433347] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/package.dsv\n'}
+[58.449040] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/ament_index/resource_index/packages/mpc_package\n'}
+[58.454129] (-) TimerEvent: {}
+[58.460980] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig.cmake\n'}
+[58.477778] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/cmake/mpc_packageConfig-version.cmake\n'}
+[58.494015] (mpc_package) StdoutLine: {'line': b'-- Symlinking: /home/wqfang/research/CIS/src/mpc_package/install/mpc_package/share/mpc_package/package.xml\n'}
+[58.507076] (mpc_package) CommandEnded: {'returncode': 0}
+[58.554820] (-) TimerEvent: {}
+[58.657482] (-) TimerEvent: {}
+[58.758625] (-) TimerEvent: {}
+[58.821403] (mpc_package) JobEnded: {'identifier': 'mpc_package', 'rc': 0}
+[58.822887] (-) EventReactorShutdown: {}
